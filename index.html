@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	
-	<title>Mobile Site Template</title>
+	<title>The Recipe Vault</title>
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="HandheldFriendly" content="True">
@@ -23,24 +23,28 @@
 
 </head>
 <body>
-		<div id="container">
-    		<h1>The Recipe Vault</h1><br />
-    		<!--Search Input-->
-    		<div id= "search">
-	    	<!-- Paragraph Tags-->
-	    	<input id="search" type="search" placeholder="Search Recipes">
-	    	<input id="searchsubmit" type="submit" value="Search">
-	    	</div><br /><br />
+	<div data-role="page" id="home">
+	
+		<div data-role="header" data-theme="b" data-position="fixed">
+    		<h1>The Recipe Vault</h1>
+		</div>
+		
+		<div data-role="fieldcontain" data-theme="b">
+			<input type="search" name="search" id="search" value="Search Recipes" data-mini="true"/>
+		</div>
+		
+		<div data-role="content">
 	    	<div id="feature1">
-		    <a href="additem.html"><img id ="feature" img src="images/addrecipe.png" /></a>
+		    <a href="additem.html" Data-ajax="false" ><img id ="feature" img src="images/addrecipe.png"/></a>
 		    </div>
 		    <br>
 		    <div id="browse">Browse Recipes</div>
 		    <div id="By Category"><a href= "#" >By Category</a></div>
 		    <div id="By Rating"><a href= "#" >By Rating</a></div>
 		    <div id="By Name"><a href= "#" >By Name</a></div>
-		    </div>
-		    
+		</div>
+		
+	</div>
 	<!-- JavaScript -->	    
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
