@@ -40,7 +40,7 @@
 		    <!--Listview browse recipes-->
 		    <ul data-role="listview" Data-filter="true">   
 		    	<li data-role="list-divider">Browse Recipes</li>
-		    		<li><a href= "#">
+		    		<li><a href= "#category">
 			    		<h2>By Category</h2>
 			    	</a></li>
 			    	<li><a href= "#">
@@ -58,25 +58,60 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#home" data-icon="search">Find Recipes</a></li>
+					<li><a href="#home" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
 				</ul>
 			</div>
 		</div>
-		
 	</div>
 	
-	<!--About Page-->
-	<div data-role="page" id="about" data-add-back-btn="true">
+	<!--Category Page (Thumbnail)-->
+	<div data-role="page" id="category" data-add-back-btn="true" data-position="fixed">
 	
-		<!--Page Header-->
-		<div data-role="header" data-theme="b" data-position="fixed">
-    		<h1>About</h1>
+		<!--Page Header for Categories-->
+		<div data-role="header" data-theme="b">
+    		<h1>Categories</h1>
 		</div>
 		
 		<div data-role="content">
-		
-		<!--Gold App Git Link-->
-		    
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Meat</li>
+						<li>Chicken</li>
+						<li>Beef</li>
+						<li>Pork</li>
+						<li>Fish</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Pasta</li>
+						<li>Spaghetti</li>
+						<li>Lasagna</li>
+						<li>Pasta Salad</li>
+						<li>Ravioli</li>
+					</ul>
+				</div>
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Soup</li>
+						<li>Chili</li>
+						<li>Chowder</li>
+						<li>Stew</li>
+						<li>Seafood</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Dessert</li>
+						<li>Cake</li>
+						<li>Cookies</li>
+						<li>Pie</li>
+						<li>Mousse</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		
 		<!--Footer Navigation Bar-->
 		<div data-role="footer" data-position="fixed">
@@ -84,11 +119,45 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#home" data-icon="search">Find Recipes</a></li>
+					<li><a href="#home" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
 				</ul>
 			</div>
 		</div>
+	</div>
 		
+	<!--About Page-->
+	<div data-role="page" id="about" data-add-back-btn="true" data-filter="true">
+	
+		<!--Page Header for About-->
+		<div data-role="header" data-theme="b" data-position="fixed">
+    		<h1>About</h1>
+		</div>
+		
+		<div data-role="content">
+		
+		<!--About Me-->
+		<h2>About the developer:</h2>
+		<p>test</p>
+		
+		<!--GitHub Master Link-->
+		<h4>GitHub Master: <a href="https://github.com/ampedej/MIU-Project-2">Click Here</a></h4>
+		
+		<!--Gold App Git Link-->
+		<h4>GitHub Gold App: <a href="http://ampedej.github.com/MIU-Project-2/GOLD/index.html">Click Here</a></h4>
+		
+		<!--Bronze App Git Link-->
+		<h4>GitHub Bronze App: <a href="http://ampedej.github.com/MIU-Project-2/BRONZE/index.html">Click Here</a></h4>
+		
+		<!--Footer Navigation Bar-->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#home" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
+				</ul>
+			</div>
+		</div>
 	</div>
 
 	<!-- JavaScript -->	    
