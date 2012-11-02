@@ -1,4 +1,10 @@
-<!doctype html>  
+<!doctype html>
+<!
+Project 2
+Edward M Murray Jr
+MIU 1211
+BRONZE APP
+>  
 <html lang="en">
 <head>
 
@@ -38,16 +44,19 @@
 		    </div><br/>
 		    
 		    <!--Listview browse recipes-->
-		    <ul data-role="listview" Data-filter="true">   
+		    <ul data-role="listview" Data-filter="true"><!--Moved search filter-->   
 		    	<li data-role="list-divider">Browse Recipes</li>
-		    		<li><a href= "#">
+		    		<li><a href= "#category">
 			    		<h2>By Category</h2>
+			    		<p>Browse Recipes By Category</p>
 			    	</a></li>
 			    	<li><a href= "#">
 				    	<h2>By Rating</h2>
+				    	<p>Not Yet Created</p>
 				    </a></li>
 					<li><a href= "#">
 						<h2>By Name</h2>
+						<p>Not Yet Created</p>
 					</a></li>		    
 		    </ul>
 		</div>
@@ -58,25 +67,108 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#home" data-icon="search">Find Recipes</a></li>
+					<li><a href="#home" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
 				</ul>
 			</div>
 		</div>
-		
 	</div>
 	
-	<!--About Page-->
-	<div data-role="page" id="about" data-add-back-btn="true">
+	<!--Category Page (Thumbnail)-->
+	<div data-role="page" id="category" data-add-back-btn="true" data-position="fixed">
 	
-		<!--Page Header-->
-		<div data-role="header" data-theme="b" data-position="fixed">
-    		<h1>About</h1>
+		<!--Page Header for Categories-->
+		<div data-role="header" data-theme="b">
+    		<h1>Categories</h1>
 		</div>
 		
-		<div data-role="content">
-		
-		<!--Gold App Git Link-->
-		    
+		<div data-role="content" >
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Meat</li>
+						<li><a href="#">
+						<img src="images/thumb/chicken.jpg" height="50" width="50" />
+                        <h2> Chicken<p>Browse Chicken Recipes.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/beef.jpg" height="50" width="50" />
+                        <h2> Beef<p>It's What's For Dinner.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/pork.jpg" height="50" width="50" />
+                        <h2> Pork<p>The Other White Meat.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/fish.jpg" height="50" width="50" />
+                        <h2> Fish<p>Getting Fishy With It.</p></h2>
+                        </a></li>
+					</ul>
+				</div>
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Pasta</li>
+						<li><a href="#">
+						<img src="images/thumb/spaghetti.jpg" height="50" width="50" />
+                        <h2> Spaghetti<p>Browse Spaghetti Recipes.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/lasagna.jpg" height="50" width="50" />
+                        <h2> Lasagna<p>Browse Lasagna Recipes..</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/pastasalad.jpg" height="50" width="50" />
+                        <h2> Pasta Salad<p>Browse Pasta Salad Recipes.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/ravioli.jpg" height="50" width="50" />
+                        <h2> Ravioli<p>Browse Ravioli Recipes.</p></h2>
+                        </a></li>
+					</ul>
+				</div>
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Soup</li>
+						<li><a href="#">
+						<img src="images/thumb/chili.jpg" height="50" width="50" />
+                        <h2> Chili<p>Browse Chili Recipes.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/chowder.jpg" height="50" width="50" />
+                        <h2> Chowder<p>Browse Chowder Recipes..</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/stew.jpg" height="50" width="50" />
+                        <h2> Stew<p>Browse Stew Recipes.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/seafood.jpg" height="50" width="50" />
+                        <h2> Seafood<p>Browse Seafood Recipes.</p></h2>
+                        </a></li>
+					</ul>
+				</div>
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Dessert</li>
+						<li><a href="#">
+						<img src="images/thumb/cake.jpg" height="50" width="50" />
+                        <h2> Cake<p>Browse Cake Recipes.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/cookies.jpg" height="50" width="50" />
+                        <h2> Cookies<p>Browse Cookies Recipes..</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/pies.jpg" height="50" width="50" />
+                        <h2> Pies<p>Browse Pie Recipes.</p></h2>
+                        </a></li>
+						<li><a href="#">
+						<img src="images/thumb/mousse.jpg" height="50" width="50" />
+                        <h2> Mousse<p>Browse Mousse Recipes.</p></h2>
+                        </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		
 		<!--Footer Navigation Bar-->
 		<div data-role="footer" data-position="fixed">
@@ -84,11 +176,45 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info">About</a></li>
-					<li><a href="#home" data-icon="search">Find Recipes</a></li>
+					<li><a href="#home" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
 				</ul>
 			</div>
 		</div>
+	</div>
 		
+	<!--About Page-->
+	<div data-role="page" id="about" data-add-back-btn="true" data-filter="true">
+	
+		<!--Page Header for About-->
+		<div data-role="header" data-theme="b" data-position="fixed">
+    		<h1>About</h1>
+		</div>
+		
+		<div data-role="content">
+		
+		<!--About Me-->
+		<h2>About the developer:</h2>
+		<p>Prior to entering this degree program I have had zero experience with JavaScript, or JQuery/JQuery mobile. I work in an interesting industry that not a lot of people know about called affiliate marketing. Affiliate marketing is a form of internet marking. Most of the marketing we do is lead generation based. Because of the industry I work in I have had the chance to deal with some HTML and CSS. I have never had to create my own however, most of my experience was simply manipulating and refactoring the code that was already written by our in house developer. When it comes to me I mostly add images and styling.</p>
+		
+		<!--GitHub Master Link-->
+		<h4>GitHub Master: <a href="https://github.com/ampedej/MIU-Project-2">Click Here</a></h4>
+		
+		<!--Gold App Git Link-->
+		<h4>GitHub Gold App: <a href="http://ampedej.github.com/MIU-Project-2/GOLD/index.html">Click Here</a></h4>
+		
+		<!--Bronze App Git Link-->
+		<h4>GitHub Bronze App: <a href="http://ampedej.github.com/MIU-Project-2/BRONZE/index.html">Click Here</a></h4>
+		
+		<!--Footer Navigation Bar-->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#about" data-icon="info">About</a></li>
+					<li><a href="#home" data-icon="search">Find Recipes</a></li><!--Link to some type of API or feed in the future-->
+				</ul>
+			</div>
+		</div>
 	</div>
 
 	<!-- JavaScript -->	    

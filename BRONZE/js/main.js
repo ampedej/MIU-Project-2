@@ -1,8 +1,9 @@
 /*
-Project 1
+Project 2
 Edward M Murray Jr
 MIU 1211
 main js File
+BRONZE APP
 */
 
 //Wait until DOM is ready.

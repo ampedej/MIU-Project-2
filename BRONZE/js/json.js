@@ -1,8 +1,9 @@
 /*
-Project 1
+Project 2
 Edward M Murray Jr
 MIU 1211
 json js File
+BRONZE APP
 */
 
 var json = {

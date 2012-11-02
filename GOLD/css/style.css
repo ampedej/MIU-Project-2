@@ -1,9 +1,10 @@
 @charset "utf-8";
 /*
-Project 1
+Project 2
 Edward M Murray Jr
 MIU 1211
 CSS Document
+GOLD APP
 */
 
 /* General Body Styles */
@@ -14,9 +15,11 @@ div#container{ width: 305px; height: auto; }
 
 h1 {margin: 0px auto; padding: 5px; color: #fff; font: Verdana, Geneva, sans-serif; font-weight: bold; font-size: 24px; text-align: center; text-shadow: 0.1em 0.1em #384D49; }
 
+img#chicken { padding-right: 10px; }
+
 nav{ margin-top: 20px; }
 
-img#feature { width: 310px; }
+img#feature { width: 310px; margin-top: -10px; }
 
 input#searchsubmit { height: 30px; }
 
@@ -44,3 +47,10 @@ input#submit{ width: 120px; height: 35px; font-size: 13px; color: white; text-sh
 
 /*Display data*/
 div#items ul:first-child ul { background-color: #CCD7D5; margin-top: 20px; padding-top: 15px; padding-bottom: 15px; margin-left: 1px; border-radius: 15px; border: solid #9aa6a4; border-width: 2px; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);  }
+
+#category h2.ui-li-heading { margin: -5px 0 0 -40px;}
+#category div.ui-btn-inner { height: 50px; }
+
+#home h2.ui-li-heading { margin-top: 0px;}
+#home div.ui-btn-inner { height: 70px; }
+#home p.ui-li-desc { margin-top: -13px; }
