@@ -48,9 +48,11 @@ input#submit{ width: 120px; height: 35px; font-size: 13px; color: white; text-sh
 /*Display data*/
 div#items ul:first-child ul { background-color: #CCD7D5; margin-top: 20px; padding-top: 15px; padding-bottom: 15px; margin-left: 1px; border-radius: 15px; border: solid #9aa6a4; border-width: 2px; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);  }
 
-#category h2.ui-li-heading { margin: -5px 0 0 -40px;}
-#category div.ui-btn-inner { height: 50px; }
+#category .ui-grid-c { text-align: center; font-size: 12px; font-weight: bold;}
+#category div.ui-block-a { padding-bottom: 20px; }
 
 #home h2.ui-li-heading { margin-top: 0px;}
 #home div.ui-btn-inner { height: 70px; }
 #home p.ui-li-desc { margin-top: -13px; }
+
+
